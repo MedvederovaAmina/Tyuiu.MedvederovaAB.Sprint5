@@ -8,7 +8,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task0.V21
         {
             DataService ds = new DataService();
             int x = 3;
-            Console.Title = "Спринт #5   |  Выполнила: Медведерова А. Б.   |  ПКТб-24-1";
+            Console.Title = "Спринт #5    |  Выполнила: Медведерова А. Б.   |  ПКТб-24-1";
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* Спринт #5                                                     *");
             Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файл.             *");

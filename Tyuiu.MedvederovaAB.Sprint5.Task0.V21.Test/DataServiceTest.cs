@@ -8,7 +8,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task0.V21.Test
         [TestMethod]
         public void ValidSaveToFileTextData()
         {
-            string path = @"C:\Users\Амина Медведерова\source\repos\Tyuiu.MedvederovaAB.Sprint5\Tyuiu.MedvederovaAB.Sprint5.Task0.V21.Test\bin\Debug\net8.0\Tyuiu.MedvederovaAB.Sprint5.Task0.V21.Test.dll";
+            string path = @"C:\Users\Амина Медведерова\source\repos\Tyuiu.MedvederovaAB.Sprint5\Tyuiu.MedvederovaAB.Sprint5.Task0.V21\bin\Debug\net8.0\OutPutFileTask0.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
