@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\..\..\..\Desktop\длл\tyuiu.cources.programming.interfaces (1).dll</HintPath>
+    </Reference>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\..\..\..\Desktop\длл\tyuiu.cources.programming.interfaces (1).dll</HintPath>
+    </Reference>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\..\..\..\Desktop\длл\tyuiu.cources.programming.interfaces (1).dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
