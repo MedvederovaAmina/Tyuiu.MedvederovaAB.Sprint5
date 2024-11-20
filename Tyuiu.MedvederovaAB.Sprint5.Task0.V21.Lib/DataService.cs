@@ -8,7 +8,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task0.V21.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path =  $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
             double y = (Math.Pow(x, 2) + 1) / Math.Sqrt(4 * Math.Pow(x, 2) - 3);
             y = Math.Round(y, 3);
             File.WriteAllText(path, Convert.ToString(y));
