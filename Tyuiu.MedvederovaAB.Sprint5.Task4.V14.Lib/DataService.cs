@@ -15,7 +15,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task4.V14.Lib
             double x = Convert.ToDouble(strX);
             double res =  Math.Round(Math.Sin(Math.Pow(Convert.ToDouble(strX),3)) + 2/Convert.ToDouble(strX), 3);
             return res;
-           
+            
         }
     }
 }
