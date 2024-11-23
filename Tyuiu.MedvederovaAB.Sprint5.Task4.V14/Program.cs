@@ -28,7 +28,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task4.V14
             Console.WriteLine("Данные находятся в файле: " + path);
 
 
-            
+             
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                    *");
             Console.WriteLine("*****************************************************************");
