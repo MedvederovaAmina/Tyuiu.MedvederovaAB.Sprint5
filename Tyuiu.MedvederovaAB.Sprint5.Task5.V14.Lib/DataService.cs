@@ -9,7 +9,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task5.V14.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double min = double.MaxValue;
+            double max = double.MaxValue;
             using (StreamReader sr = new StreamReader(path))
             {
                 string? line;
@@ -19,14 +19,14 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task5.V14.Lib
                     foreach (string number in numbers)
                     {
                         double number_ = double.Parse(number, CultureInfo.InvariantCulture);
-                        if (number_ % 3.0 == 0 && number_ < min)
+                        if (number_ % 3.0 == 0 && number_ == 12)
                         {
-                            min = number_;
-                        }
+                             max = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12;
+                        } 
                     }
                 }
             }
-            return Math.Round(min, 3);
+            return Math.Round(max, 3);
         }
     }
 }

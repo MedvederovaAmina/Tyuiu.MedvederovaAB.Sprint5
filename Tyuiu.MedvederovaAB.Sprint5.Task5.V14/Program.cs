@@ -11,7 +11,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task5.V14
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* Спринт #5                                                     *");
             Console.WriteLine("* Тема: Чтение данных из текстового файла.                      *");
-            Console.WriteLine("* Задание #5                                                    *");
+            Console.WriteLine("* Задание #5                                                    *"); 
             Console.WriteLine("* Вариант #14                                                   *");
             Console.WriteLine("* Выполнила: Медведерова Амина Борисовна | ПКТб-24-1            *");
             Console.WriteLine("*****************************************************************");
