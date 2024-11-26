@@ -14,9 +14,11 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task6.V16.Lib
             int count = 0;
             string str = File.ReadAllText(@"C:\Users\Амина Медведерова\source\repos\Tyuiu.MedvederovaAB.Sprint5\Tyuiu.MedvederovaAB.Sprint5.Task6.V16\bin\Debug\net8.0\InPutDataFileTask6V16.txt");
             string res = "";
-            foreach (char c in str)
+            string[] words = str.Split(' ');
+
+            foreach (string word in words)
             {
-                if (char.IsLower(c) && (Regex.IsMatch(Convert.ToString(c), @"\p{IsBasicLatin}")))
+                if (Regex.IsMatch(word, @"^[A-Za-z!@#$%^&*()_+\-=\[\]{};':""\\|,.<>\/?]+$"))
                 {
                     count += 1;
                 }
