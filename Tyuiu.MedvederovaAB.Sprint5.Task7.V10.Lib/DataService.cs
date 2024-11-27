@@ -8,43 +8,29 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSave = Path.Combine(Path.GetTempPath(), "outPutDataFileTask7V10.txt");
 
-            if (File.Exists(pathSave)) File.Delete(pathSave);
+            int count = 0;
             string str = File.ReadAllText(path);
-            
+            string result = "";
+            string[] words = str.Split(' ');
 
-            using (StreamReader sr = new StreamReader(path))
+            foreach (char c in path)
             {
-                string? line;
-                string result = "";
-                string[] words = str.Split(' ');
-                string strLine = "";
-                int index = 0;
 
-                
-                while (index < path.Length)
+                if (c >= 'A' && c <= 'Z')
                 {
-                    foreach (char c in path)
-                    {
 
-                        if (c >= 'A' && c <= 'Z')
-                        {
+                    result.Append(char.ToLower(c));
+                }
+                else
+                {
 
-                            result.Append(char.ToLower(c));
-                        }
-                        else
-                        {
+                    result.Append(c);
 
-                            result.Append(c);
-                        }
-                    }
 
                 }
-
                 return result;
             }
-           
         }
     }
 }
