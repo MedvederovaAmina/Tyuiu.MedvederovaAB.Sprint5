@@ -23,7 +23,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
                 }
                
             }
-            File.AppendAllText(resPath, String.Join(" ", words));
+            File.WriteAllText(resPath, String.Join(" ", words));
 
             return resPath;
         }
