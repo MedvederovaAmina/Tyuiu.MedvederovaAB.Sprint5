@@ -19,12 +19,12 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
                 if (c >= 'A' && c <= 'Z')
                 {
 
-                    resPath.Append(char.ToUpper(c));
+                    resPath.Append(char.ToLower(c));
                 }
                 else
                 {
 
-                    resPath.Append(c);
+                    resPath.Append(char.ToUpper(c));
                 }
             }
             File.AppendAllText(resPath, text);
