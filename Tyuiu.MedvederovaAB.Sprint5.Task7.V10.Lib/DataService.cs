@@ -11,19 +11,15 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
             string pathSave = Path.Combine(Path.GetTempPath(), "outPutDataFileTask7V10.txt");
 
             if (File.Exists(pathSave)) File.Delete(pathSave);
-
-            string strLine = "";
+            string str = File.ReadAllText(path);
+            
 
             using (StreamReader sr = new StreamReader(path))
             {
                 string? line;
-
-                char[] charArray = pathSave.ToCharArray();
-
-                if (path == null) return string.Empty;
-
-                
-                string result = string.Empty;
+                string result = "";
+                string[] words = str.Split(' ');
+                string strLine = "";
                 int index = 0;
 
                 
