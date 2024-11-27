@@ -29,21 +29,21 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
                 
                 while (index < path.Length)
                 {
-                    char currentChar = path[index];
-
-                    
-                    if (currentChar >= 'A' && currentChar <= 'Z')
+                    foreach (char c in path)
                     {
-                        
-                        result += (char)(currentChar + ('a' - 'A'));
-                    }
-                    else
-                    {
-                        
-                        result += currentChar;
+
+                        if (c >= 'A' && c <= 'Z')
+                        {
+
+                            result.Append(char.ToLower(c));
+                        }
+                        else
+                        {
+
+                            result.Append(c);
+                        }
                     }
 
-                    index++;
                 }
 
                 return result;
