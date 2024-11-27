@@ -25,13 +25,13 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
                     for (int i = 0; i < charArray.Length; i++)
                     {
                         if (path == null) return string.Empty;
-                        return path.ToLower();
+                       
                     }
                     File.AppendAllText(pathSave, strLine + Environment.NewLine);
                     strLine = "";
                 }
             }
-            return path;
+            return path.ToLower();
         }
     }
 }
