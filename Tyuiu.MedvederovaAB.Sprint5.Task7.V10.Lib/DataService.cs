@@ -20,18 +20,35 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
 
                 char[] charArray = pathSave.ToCharArray();
 
-                while ((line = sr.ReadLine()) != null)
+                if (path == null) return string.Empty;
+
+                
+                string result = string.Empty;
+                int index = 0;
+
+                
+                while (index < path.Length)
                 {
-                    for (int i = 0; i < charArray.Length; i++)
+                    char currentChar = path[index];
+
+                    
+                    if (currentChar >= 'A' && currentChar <= 'Z')
                     {
-                        if (i == null) return string.Empty;
-                       
+                        
+                        result += (char)(currentChar + ('a' - 'A'));
                     }
-                    File.AppendAllText(pathSave, strLine + Environment.NewLine);
-                    strLine = "";
+                    else
+                    {
+                        
+                        result += currentChar;
+                    }
+
+                    index++;
                 }
+
+                return result;
             }
-            return path.ToLower();
+           
         }
     }
 }
