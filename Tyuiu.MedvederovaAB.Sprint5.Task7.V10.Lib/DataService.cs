@@ -1,5 +1,5 @@
 ﻿using System.IO;
-
+using System.Text.RegularExpressions;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
@@ -12,22 +12,18 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
             FileInfo fileInfo = new FileInfo(resPath);
            bool fileExsists = fileInfo.Exists;
             if (fileExsists) { File.Delete(resPath); }
-            string text = File.ReadAllText(path);
-            foreach (char c in text)
+            string str = File.ReadAllText(path);
+            string[] words = str.Split(' ');
+            for (int i = 0; i < words.Length; i ++)
             {
 
-                if (c >= 'A' && c <= 'Z')
+                if (Regex.IsMatch(words[i], "[A - Z]"))
                 {
-
-                    resPath.Append(char.ToLower(c));
+                    words[i] = words[i].ToLower();
                 }
-                else
-                {
-
-                    resPath.Append(char.ToUpper(c));
-                }
+               
             }
-            File.AppendAllText(resPath, text);
+            File.AppendAllText(resPath, String.Join(" ", words));
 
             return resPath;
         }
