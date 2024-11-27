@@ -31,7 +31,7 @@ namespace Tyuiu.MedvederovaAB.Sprint5.Task7.V10.Lib
                     strLine = "";
                 }
             }
-            return pathSave;
+            return path;
         }
     }
 }
